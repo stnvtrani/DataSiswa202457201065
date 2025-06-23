@@ -3,8 +3,12 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package alumni202457201065;
-
+import java.awt.HeadlessException;
 import javax.swing.JOptionPane;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 
 /**
  *
@@ -50,7 +54,9 @@ public class LoginForm extends javax.swing.JFrame {
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("USER LOGIN");
 
+        jUsername.setHorizontalAlignment(javax.swing.JTextField.LEFT);
         jUsername.setAutoscrolls(false);
+        jUsername.setBorder(null);
         jUsername.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jUsernameActionPerformed(evt);
@@ -81,6 +87,8 @@ public class LoginForm extends javax.swing.JFrame {
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("Password");
 
+        jPasswordField1.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        jPasswordField1.setBorder(null);
         jPasswordField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jPasswordField1ActionPerformed(evt);
@@ -165,15 +173,38 @@ public class LoginForm extends javax.swing.JFrame {
 
     private void bLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bLoginActionPerformed
         // TODO add your handling code here:
-    String username = jUsername.getText();
-String password = new String(jPasswordField1.getPassword());
+       
+        String username = jUsername.getText();
+        String password = jPasswordField1.getText();
 
-if (username.equals("Owner") && password.equals("241105")) {
-    JOptionPane.showMessageDialog(this, "Login berhasil!");
-    new dashboard().setVisible(true); // buka form dashboard
-    this.dispose(); // tutup form login
+if (username.length() !=0 && password.length()!=0) {
+    
+    try {
+        String sql = "SELECT * FROM user WHERE username=? AND password=md5(?)";
+        
+        Connection con = koneksi.konek();
+        
+        PreparedStatement ps = con.prepareStatement(sql);
+        
+        ps.setString(1, username);
+        
+        ps.setString(2, password);
+        
+        ResultSet rs = ps.executeQuery();
+        
+        if (rs.next()) {
+            //tutup from login
+            dispose();
+            //buka from dasbor
+            new dashboard().setVisible(true);
+        } else {
+            JOptionPane.showMessageDialog(null, "username/password salah");
+        }
+    } catch (SQLException sQLException) {
+        JOptionPane.showMessageDialog(null, sQLException.getMessage());
+    }
 } else {
-    JOptionPane.showMessageDialog(this, "Username atau Password salah!", "Error", JOptionPane.ERROR_MESSAGE);
+    JOptionPane.showMessageDialog(this, "username atau password tidak Boleh kosong");
 }
 
         

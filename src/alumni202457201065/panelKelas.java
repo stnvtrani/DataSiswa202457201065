@@ -13,6 +13,7 @@ import javax.swing.table.DefaultTableModel;
 public class panelKelas extends javax.swing.JPanel {
      DefaultTableModel model;
     int rowSelected = -1;
+   
 
 
     /**
@@ -21,7 +22,7 @@ public class panelKelas extends javax.swing.JPanel {
     public panelKelas() {
         initComponents();
         model = new DefaultTableModel(new String[]{"Kode Kelas", "Nama kelas", "Tingkatan", "Jurusan", "Wali kelas"}, 0);
-jTable1.setModel(model);
+tableKelas.setModel(model);
         
     }
 
@@ -34,101 +35,88 @@ jTable1.setModel(model);
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        jKodeKelas = new javax.swing.JTextField();
-        jNamakKls = new javax.swing.JTextField();
-        CbJrsn = new javax.swing.JComboBox<>();
-        CbTingktn = new javax.swing.JComboBox<>();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jWaliKls = new javax.swing.JTextField();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
-        bTambah = new javax.swing.JButton();
-        bUbah = new javax.swing.JButton();
-        bHapus = new javax.swing.JButton();
-        bReset = new javax.swing.JButton();
-        jLpanel = new javax.swing.JLayeredPane();
+        panelKelas = new javax.swing.JPanel();
+        jPanel3 = new javax.swing.JPanel();
+        jLabel7 = new javax.swing.JLabel();
+        jExit = new javax.swing.JButton();
+        jKodeKelas1 = new javax.swing.JTextField();
+        jNamakKls1 = new javax.swing.JTextField();
+        CbJrsn1 = new javax.swing.JComboBox<>();
+        CbTingktn1 = new javax.swing.JComboBox<>();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        tableKelas = new javax.swing.JTable();
+        bTambah1 = new javax.swing.JButton();
+        bUbah1 = new javax.swing.JButton();
+        bHapus1 = new javax.swing.JButton();
+        bReset1 = new javax.swing.JButton();
+        CbWaliKls = new javax.swing.JComboBox<>();
 
-        setLayout(null);
+        jPanel3.setBackground(new java.awt.Color(102, 153, 255));
 
-        jPanel1.setBackground(new java.awt.Color(102, 153, 255));
+        jLabel7.setFont(new java.awt.Font("Serif", 1, 14)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel7.setText("Data Kelas");
 
-        jLabel1.setFont(new java.awt.Font("Serif", 1, 14)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setText("Data Kelas");
+        jExit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/alumni202457201065/gambar/icons8-exit-48.png"))); // NOI18N
+        jExit.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jExitActionPerformed(evt);
+            }
+        });
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
+        jPanel3.setLayout(jPanel3Layout);
+        jPanel3Layout.setHorizontalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
                 .addGap(15, 15, 15)
-                .addComponent(jLabel1)
-                .addContainerGap(1078, Short.MAX_VALUE))
+                .addComponent(jLabel7)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 776, Short.MAX_VALUE)
+                .addComponent(jExit, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+        jPanel3Layout.setVerticalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 20, Short.MAX_VALUE)
+                .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jExit, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
-        add(jPanel1);
-        jPanel1.setBounds(0, 44, 1160, 32);
-
-        jKodeKelas.addActionListener(new java.awt.event.ActionListener() {
+        jKodeKelas1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jKodeKelasActionPerformed(evt);
+                jKodeKelas1ActionPerformed(evt);
             }
         });
-        add(jKodeKelas);
-        jKodeKelas.setBounds(54, 150, 179, 50);
 
-        jNamakKls.addActionListener(new java.awt.event.ActionListener() {
+        jNamakKls1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jNamakKlsActionPerformed(evt);
+                jNamakKls1ActionPerformed(evt);
             }
         });
-        add(jNamakKls);
-        jNamakKls.setBounds(54, 231, 179, 50);
 
-        CbJrsn.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "IPA ", "IPS", "AGAMA" }));
-        add(CbJrsn);
-        CbJrsn.setBounds(54, 396, 179, 55);
+        CbJrsn1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "IPA ", "IPS", "AGAMA" }));
 
-        CbTingktn.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "10", "11", "12" }));
-        add(CbTingktn);
-        CbTingktn.setBounds(54, 312, 179, 55);
+        CbTingktn1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "10", "11", "12" }));
 
-        jLabel2.setText("Kode Kelas");
-        add(jLabel2);
-        jLabel2.setBounds(54, 128, 57, 16);
+        jLabel8.setText("Kode Kelas");
 
-        jLabel3.setText("Nama Kelas");
-        add(jLabel3);
-        jLabel3.setBounds(54, 212, 62, 16);
+        jLabel9.setText("Nama Kelas");
 
-        jLabel4.setText("Tingkatan");
-        add(jLabel4);
-        jLabel4.setBounds(54, 293, 53, 16);
+        jLabel10.setText("Tingkatan");
 
-        jLabel5.setText("Jurusan");
-        add(jLabel5);
-        jLabel5.setBounds(54, 379, 40, 16);
+        jLabel11.setText("Jurusan");
 
-        jLabel6.setText("Wali Kelas");
-        add(jLabel6);
-        jLabel6.setBounds(54, 463, 53, 16);
-        add(jWaliKls);
-        jWaliKls.setBounds(54, 491, 179, 52);
+        jLabel12.setText("Wali Kelas");
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        tableKelas.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
                 {null, null, null, null},
@@ -139,168 +127,256 @@ jTable1.setModel(model);
                 "Title 1", "Title 2", "Title 3", "Title 4"
             }
         ));
-        jScrollPane1.setViewportView(jTable1);
-
-        add(jScrollPane1);
-        jScrollPane1.setBounds(292, 150, 529, 402);
-
-        bTambah.setBackground(new java.awt.Color(0, 204, 102));
-        bTambah.setText("Tambah");
-        bTambah.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                bTambahActionPerformed(evt);
+        tableKelas.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                tableKelasMouseClicked(evt);
             }
         });
-        add(bTambah);
-        bTambah.setBounds(292, 604, 93, 37);
+        jScrollPane2.setViewportView(tableKelas);
 
-        bUbah.setBackground(new java.awt.Color(255, 204, 51));
-        bUbah.setText("Ubah");
-        bUbah.addActionListener(new java.awt.event.ActionListener() {
+        bTambah1.setBackground(new java.awt.Color(0, 204, 102));
+        bTambah1.setText("Tambah");
+        bTambah1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                bUbahActionPerformed(evt);
+                bTambah1ActionPerformed(evt);
             }
         });
-        add(bUbah);
-        bUbah.setBounds(403, 604, 93, 37);
 
-        bHapus.setBackground(new java.awt.Color(255, 51, 51));
-        bHapus.setText("Hapus");
-        bHapus.addActionListener(new java.awt.event.ActionListener() {
+        bUbah1.setBackground(new java.awt.Color(255, 204, 51));
+        bUbah1.setText("Ubah");
+        bUbah1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                bHapusActionPerformed(evt);
+                bUbah1ActionPerformed(evt);
             }
         });
-        add(bHapus);
-        bHapus.setBounds(514, 604, 93, 37);
 
-        bReset.setBackground(new java.awt.Color(51, 153, 252));
-        bReset.setText("Reset");
-        bReset.addActionListener(new java.awt.event.ActionListener() {
+        bHapus1.setBackground(new java.awt.Color(255, 51, 51));
+        bHapus1.setText("Hapus");
+        bHapus1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                bResetActionPerformed(evt);
+                bHapus1ActionPerformed(evt);
             }
         });
-        add(bReset);
-        bReset.setBounds(625, 604, 93, 37);
 
-        javax.swing.GroupLayout jLpanelLayout = new javax.swing.GroupLayout(jLpanel);
-        jLpanel.setLayout(jLpanelLayout);
-        jLpanelLayout.setHorizontalGroup(
-            jLpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1190, Short.MAX_VALUE)
+        bReset1.setBackground(new java.awt.Color(51, 153, 252));
+        bReset1.setText("Reset");
+        bReset1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bReset1ActionPerformed(evt);
+            }
+        });
+
+        CbWaliKls.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Muhammad Aufa", "Aruni Ningtyas", "Jalaludiin Ahmad", "Budi Santoso" }));
+
+        javax.swing.GroupLayout panelKelasLayout = new javax.swing.GroupLayout(panelKelas);
+        panelKelas.setLayout(panelKelasLayout);
+        panelKelasLayout.setHorizontalGroup(
+            panelKelasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelKelasLayout.createSequentialGroup()
+                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 198, Short.MAX_VALUE))
+            .addGroup(panelKelasLayout.createSequentialGroup()
+                .addGap(87, 87, 87)
+                .addGroup(panelKelasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel8)
+                    .addComponent(CbWaliKls, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(panelKelasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(panelKelasLayout.createSequentialGroup()
+                    .addGap(54, 89, Short.MAX_VALUE)
+                    .addGroup(panelKelasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelKelasLayout.createSequentialGroup()
+                            .addGroup(panelKelasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(jKodeKelas1, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jLabel9)
+                                .addComponent(jNamakKls1, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jLabel10)
+                                .addComponent(CbTingktn1, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jLabel11)
+                                .addComponent(CbJrsn1, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jLabel12))
+                            .addGap(59, 59, 59)
+                            .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 529, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelKelasLayout.createSequentialGroup()
+                            .addComponent(bTambah1, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGap(18, 18, 18)
+                            .addComponent(bUbah1, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGap(18, 18, 18)
+                            .addComponent(bHapus1, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGap(18, 18, 18)
+                            .addComponent(bReset1, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGap(0, 237, Short.MAX_VALUE)))
         );
-        jLpanelLayout.setVerticalGroup(
-            jLpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1270, Short.MAX_VALUE)
+        panelKelasLayout.setVerticalGroup(
+            panelKelasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelKelasLayout.createSequentialGroup()
+                .addGap(55, 55, 55)
+                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(100, 100, 100)
+                .addComponent(jLabel8)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 348, Short.MAX_VALUE)
+                .addComponent(CbWaliKls, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(267, 267, 267))
+            .addGroup(panelKelasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(panelKelasLayout.createSequentialGroup()
+                    .addGap(0, 169, Short.MAX_VALUE)
+                    .addGroup(panelKelasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(panelKelasLayout.createSequentialGroup()
+                            .addComponent(jKodeKelas1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGap(12, 12, 12)
+                            .addComponent(jLabel9)
+                            .addGap(3, 3, 3)
+                            .addComponent(jNamakKls1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGap(12, 12, 12)
+                            .addComponent(jLabel10)
+                            .addGap(3, 3, 3)
+                            .addComponent(CbTingktn1, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGap(12, 12, 12)
+                            .addComponent(jLabel11)
+                            .addGap(1, 1, 1)
+                            .addComponent(CbJrsn1, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGap(12, 12, 12)
+                            .addComponent(jLabel12))
+                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGap(52, 52, 52)
+                    .addGroup(panelKelasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(bTambah1, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(bUbah1, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(bHapus1, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(bReset1, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGap(0, 92, Short.MAX_VALUE)))
         );
 
-        add(jLpanel);
-        jLpanel.setBounds(-360, 0, 1190, 1270);
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
+        this.setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(panelKelas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(panelKelas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+        );
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jKodeKelasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jKodeKelasActionPerformed
+    private void jKodeKelas1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jKodeKelas1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jKodeKelasActionPerformed
+    }//GEN-LAST:event_jKodeKelas1ActionPerformed
 
-    private void jNamakKlsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jNamakKlsActionPerformed
+    private void jNamakKls1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jNamakKls1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jNamakKlsActionPerformed
+    }//GEN-LAST:event_jNamakKls1ActionPerformed
 
-    private void bUbahActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bUbahActionPerformed
+    private void bTambah1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bTambah1ActionPerformed
         // TODO add your handling code here:
-        int selectedRow = jTable1.getSelectedRow();
-    if (selectedRow != -1) {
-        String KK = jKodeKelas.getText();
-        String namaKls = jNamakKls.getText();
-        String Wk = jWaliKls.getText();
-        String jrsn = CbJrsn.getSelectedItem().toString();
-        String tngktn = CbTingktn.getSelectedItem().toString();
+        String kk = jKodeKelas1.getText();
+        String namakls = jNamakKls1.getText();
+        String tingkatan = CbTingktn1.getSelectedItem().toString();
+        String jurusan =  CbJrsn1.getSelectedItem().toString();
+        String Wk = CbWaliKls.getSelectedItem().toString();
 
-        model.setValueAt(KK, selectedRow, 0);
-        model.setValueAt(namaKls, selectedRow, 1);
-        model.setValueAt(tngktn, selectedRow, 3);
-        model.setValueAt(jrsn, selectedRow, 3);
-        model.setValueAt(Wk, selectedRow, 2);
+    if (kk.isEmpty() && namakls.isEmpty() && tingkatan.isEmpty() && jurusan.isEmpty() && Wk.isEmpty()) {
+        JOptionPane.showMessageDialog(this, "Data tidak boleh kosong");
+    } else {
+        model.addRow(new Object[]{kk, namakls, tingkatan, jurusan, Wk});
         resetForm();
+    }
+    }//GEN-LAST:event_bTambah1ActionPerformed
+
+    private void bUbah1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bUbah1ActionPerformed
+        // TODO add your handling code here:
+        int selectedRow = tableKelas.getSelectedRow();
+    if (selectedRow != -1) {
+        String kk = jKodeKelas1.getText().trim();
+        String namakls = jNamakKls1.getText().trim();
+        String tingkatan = CbTingktn1.getSelectedItem().toString().trim();
+        String jurusan =  CbJrsn1.getSelectedItem().toString().trim();
+        String Wk = CbWaliKls.getSelectedItem().toString().trim();
+        model.setValueAt(jKodeKelas1.getText(), selectedRow, 0);
+        model.setValueAt(jNamakKls1.getText(), selectedRow, 1);
+        model.setValueAt(CbTingktn1.getSelectedItem(), selectedRow, 2);
+        model.setValueAt(CbJrsn1.getSelectedItem(), selectedRow, 3);
+        model.setValueAt(CbWaliKls.getSelectedItem(), selectedRow, 4);
+        
     } else {
         JOptionPane.showMessageDialog(this, "Pilih baris yang akan diubah.");
     }
-    }//GEN-LAST:event_bUbahActionPerformed
+    }//GEN-LAST:event_bUbah1ActionPerformed
 
-    private void bTambahActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bTambahActionPerformed
+    private void bHapus1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bHapus1ActionPerformed
         // TODO add your handling code here:
-       String KK = jKodeKelas.getText();
-        String namaKls = jNamakKls.getText();
-        String Wk = jWaliKls.getText();
-        String jrsn = CbJrsn.getSelectedItem().toString();
-        String tngktn = CbTingktn.getSelectedItem().toString(); 
-
-    if (KK.isEmpty()) {
-        JOptionPane.showMessageDialog(this, "Data tidak boleh kosong");
-    if(namaKls.isEmpty()){
-        JOptionPane.showMessageDialog(this, "Data tidak boleh kosong");
-    }
-    if(tngktn.isEmpty()){
-        JOptionPane.showMessageDialog(this, "Data tidak boleh kosong");
-    }
-    if(jrsn.isEmpty()){
-        JOptionPane.showMessageDialog(this, "Data tidak boleh kosong");
-    }
-    if(Wk.isEmpty()){
-        JOptionPane.showMessageDialog(this, "Data tidak boleh kosong");
-    }
-    } else {
-        model.addRow(new Object[]{KK, namaKls, jrsn, tngktn, Wk});
-        resetForm();
-    }
-    }//GEN-LAST:event_bTambahActionPerformed
-
-    private void bHapusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bHapusActionPerformed
-        // TODO add your handling code here:
-        int selectedRow = jTable1.getSelectedRow();
+        int selectedRow = tableKelas.getSelectedRow();
     if (selectedRow != -1) {
         model.removeRow(selectedRow);
         resetForm();
     } else {
         JOptionPane.showMessageDialog(this, "Pilih baris yang akan dihapus.");
     }
-    }//GEN-LAST:event_bHapusActionPerformed
+    }//GEN-LAST:event_bHapus1ActionPerformed
 
-    private void bResetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bResetActionPerformed
+    private void bReset1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bReset1ActionPerformed
         // TODO add your handling code here:
-        resetForm();
-    }//GEN-LAST:event_bResetActionPerformed
+         resetForm();
+    }//GEN-LAST:event_bReset1ActionPerformed
+
+    private void jExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jExitActionPerformed
+        // TODO add your handling code here:
+        panelKelas.setVisible(false);
+    }//GEN-LAST:event_jExitActionPerformed
+
+    private void tableKelasMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tableKelasMouseClicked
+        // TODO add your handling code here:
+        int baris = tableKelas.getSelectedRow(); //ambil nilai baris
+        
+        //ambil nilai kolom
+        String kode = tableKelas.getValueAt(baris, 0).toString();
+        String nama = tableKelas.getValueAt(baris, 1).toString();
+        String tingkatan = tableKelas.getValueAt(baris, 2).toString();
+        String jurusan = tableKelas.getValueAt(baris, 3).toString();
+        String wali = tableKelas.getValueAt(baris, 4).toString();
+       
+        //isi ke textField
+        jKodeKelas1.setText(kode);
+        jNamakKls1.setText(nama);
+        CbTingktn1.setSelectedItem(tingkatan);
+        CbJrsn1.setSelectedItem(jurusan);
+        CbWaliKls.setSelectedItem(wali);jKodeKelas1.setText(kode);
+    }//GEN-LAST:event_tableKelasMouseClicked
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JComboBox<String> CbJrsn;
-    private javax.swing.JComboBox<String> CbTingktn;
-    private javax.swing.JButton bHapus;
-    private javax.swing.JButton bReset;
-    private javax.swing.JButton bTambah;
-    private javax.swing.JButton bUbah;
-    private javax.swing.JTextField jKodeKelas;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLayeredPane jLpanel;
-    private javax.swing.JTextField jNamakKls;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTable1;
-    private javax.swing.JTextField jWaliKls;
+    private javax.swing.JComboBox<String> CbJrsn1;
+    private javax.swing.JComboBox<String> CbTingktn1;
+    private javax.swing.JComboBox<String> CbWaliKls;
+    private javax.swing.JButton bHapus1;
+    private javax.swing.JButton bReset1;
+    private javax.swing.JButton bTambah1;
+    private javax.swing.JButton bUbah1;
+    private javax.swing.JButton jExit;
+    private javax.swing.JTextField jKodeKelas1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
+    private javax.swing.JTextField jNamakKls1;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JPanel panelKelas;
+    private javax.swing.JTable tableKelas;
     // End of variables declaration//GEN-END:variables
 
     private void resetForm() {
-       jKodeKelas.setText("");
-    jNamakKls.setText("");
-    jTable1.clearSelection(); 
-    CbTingktn.setSelectedIndex(0);
-    CbJrsn.setSelectedIndex(0); 
-    jWaliKls.setText("");  
+      jKodeKelas1.setText("");
+    jNamakKls1.setText("");
+    tableKelas.clearSelection(); 
+    CbTingktn1.setSelectedIndex(0);
+    CbJrsn1.setSelectedIndex(0); 
+    CbWaliKls.setSelectedItem(0);  
     }
 }
