@@ -465,7 +465,7 @@ public class panelKelas extends javax.swing.JPanel {
 
     private void btnResetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnResetActionPerformed
         // TODO add your handling code here:
-         resetForm();
+         reset();
     }//GEN-LAST:event_btnResetActionPerformed
 
     private void jExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jExitActionPerformed
@@ -525,12 +525,4 @@ public class panelKelas extends javax.swing.JPanel {
     private javax.swing.JTable tblKelas;
     // End of variables declaration//GEN-END:variables
 
-    private void resetForm() {
-      tKodeKelas.setText("");
-    tNamaKelas.setText("");
-    tblKelas.clearSelection(); 
-    cTingkatan.setSelectedIndex(0);
-    cJurusan.setSelectedIndex(0); 
-    cWali.setSelectedItem(0);  
-    }
 }

@@ -333,7 +333,7 @@ void reset(){
 
     private void btnResetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnResetActionPerformed
         // TODO add your handling code here:
-         resetForm();
+        reset();
     }//GEN-LAST:event_btnResetActionPerformed
 
     private void jExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jExitActionPerformed
@@ -377,11 +377,6 @@ void reset(){
     private javax.swing.JTable tblJurusan;
     // End of variables declaration//GEN-END:variables
 
-    private void resetForm() {
-        tKodeJurusan.setText("");
-    tNamaJurusan.setText("");
-    tblJurusan.clearSelection();
-        
-    }
+   
 
 }
