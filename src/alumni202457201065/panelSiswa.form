@@ -37,29 +37,25 @@
               <Group type="102" alignment="1" attributes="0">
                   <EmptySpace max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="jFoto1" alignment="1" min="-2" pref="168" max="-2" attributes="0"/>
+                      <Component id="tFoto" alignment="1" min="-2" pref="168" max="-2" attributes="0"/>
                       <Group type="102" alignment="1" attributes="0">
-                          <Component id="bTambah1" min="-2" pref="93" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
-                      </Group>
-                      <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
-                          <Component id="jPilihFoto1" min="-2" pref="100" max="-2" attributes="0"/>
+                          <Component id="bTambah1" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="16" pref="16" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="1" attributes="0">
-                      <Group type="103" alignment="1" groupAlignment="0" attributes="0">
-                          <Component id="tNis1" min="-2" pref="282" max="-2" attributes="0"/>
+                      <Group type="103" alignment="1" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="tNis" alignment="1" pref="282" max="32767" attributes="0"/>
                           <Component id="jLabel16" min="-2" max="-2" attributes="0"/>
-                          <Component id="tNama1" min="-2" pref="282" max="-2" attributes="0"/>
+                          <Component id="tNamaSiswa" alignment="1" pref="282" max="32767" attributes="0"/>
                           <Component id="jLabel17" min="-2" max="-2" attributes="0"/>
-                          <Component id="CbJk1" min="-2" pref="282" max="-2" attributes="0"/>
+                          <Component id="cJenisKelamin" alignment="1" pref="282" max="32767" attributes="0"/>
                           <Component id="jLabel18" min="-2" max="-2" attributes="0"/>
-                          <Component id="tTl1" min="-2" pref="282" max="-2" attributes="0"/>
+                          <Component id="tTempatLahir" alignment="1" pref="282" max="32767" attributes="0"/>
                           <Component id="jLabel19" min="-2" max="-2" attributes="0"/>
-                          <Component id="tTglLhr1" min="-2" pref="282" max="-2" attributes="0"/>
                           <Component id="jLabel15" alignment="0" min="-2" pref="31" max="-2" attributes="0"/>
+                          <Component id="tTanggal" alignment="1" max="32767" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="1" attributes="0">
                           <Component id="bUbah1" min="-2" pref="93" max="-2" attributes="0"/>
@@ -72,11 +68,11 @@
                   <EmptySpace min="-2" pref="86" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Component id="jLabel20" min="-2" max="-2" attributes="0"/>
-                      <Component id="tHp1" min="-2" pref="230" max="-2" attributes="0"/>
+                      <Component id="tHp" min="-2" pref="230" max="-2" attributes="0"/>
                       <Component id="jLabel21" min="-2" max="-2" attributes="0"/>
-                      <Component id="CbKls1" min="-2" pref="230" max="-2" attributes="0"/>
+                      <Component id="cKelas" min="-2" pref="230" max="-2" attributes="0"/>
                       <Component id="jLabel22" min="-2" max="-2" attributes="0"/>
-                      <Component id="tAlamat1" min="-2" pref="230" max="-2" attributes="0"/>
+                      <Component id="tAlamat" min="-2" pref="230" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="322" max="-2" attributes="0"/>
               </Group>
@@ -85,7 +81,10 @@
                       <Component id="jPanel7" min="-2" max="-2" attributes="0"/>
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
-                          <Component id="jScrollPane2" min="-2" pref="680" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="tFotoPath" min="-2" max="-2" attributes="0"/>
+                              <Component id="jScrollPane2" min="-2" pref="680" max="-2" attributes="0"/>
+                          </Group>
                       </Group>
                   </Group>
                   <EmptySpace max="32767" attributes="0"/>
@@ -103,41 +102,37 @@
                       <Component id="jLabel15" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                      <Component id="tFoto" alignment="0" min="-2" pref="241" max="-2" attributes="0"/>
                       <Group type="102" alignment="0" attributes="0">
-                          <Component id="jFoto1" min="-2" pref="241" max="-2" attributes="0"/>
-                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Component id="jPilihFoto1" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <Group type="102" alignment="0" attributes="0">
-                          <Component id="tNis1" min="-2" pref="30" max="-2" attributes="0"/>
+                          <Component id="tNis" min="-2" pref="30" max="-2" attributes="0"/>
                           <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
                           <Component id="jLabel16" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="1" pref="1" max="-2" attributes="0"/>
-                          <Component id="tNama1" min="-2" pref="30" max="-2" attributes="0"/>
+                          <Component id="tNamaSiswa" min="-2" pref="30" max="-2" attributes="0"/>
                           <EmptySpace min="7" pref="7" max="-2" attributes="0"/>
                           <Component id="jLabel17" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
-                          <Component id="CbJk1" min="-2" pref="39" max="-2" attributes="0"/>
+                          <Component id="cJenisKelamin" min="-2" pref="39" max="-2" attributes="0"/>
                           <EmptySpace min="11" pref="11" max="-2" attributes="0"/>
                           <Component id="jLabel18" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
-                          <Component id="tTl1" min="-2" pref="30" max="-2" attributes="0"/>
+                          <Component id="tTempatLahir" min="-2" pref="30" max="-2" attributes="0"/>
                           <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
                           <Component id="jLabel19" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
-                          <Component id="tTglLhr1" min="-2" pref="30" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="tTanggal" max="32767" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
-                          <Component id="tHp1" min="-2" pref="30" max="-2" attributes="0"/>
+                          <Component id="tHp" min="-2" pref="30" max="-2" attributes="0"/>
                           <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
                           <Component id="jLabel21" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="1" pref="1" max="-2" attributes="0"/>
-                          <Component id="CbKls1" min="-2" pref="30" max="-2" attributes="0"/>
+                          <Component id="cKelas" min="-2" pref="30" max="-2" attributes="0"/>
                           <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
                           <Component id="jLabel22" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
-                          <Component id="tAlamat1" min="-2" pref="161" max="-2" attributes="0"/>
+                          <Component id="tAlamat" min="-2" pref="161" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
@@ -148,8 +143,10 @@
                       <Component id="bReset1" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
-                  <Component id="jScrollPane2" min="-2" pref="170" max="-2" attributes="0"/>
-                  <EmptySpace pref="551" max="32767" attributes="0"/>
+                  <Component id="jScrollPane2" min="-2" pref="246" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="tFotoPath" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace pref="498" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -162,7 +159,7 @@
 
           <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
           <SubComponents>
-            <Component class="javax.swing.JTable" name="tableSiswa">
+            <Component class="javax.swing.JTable" name="tblSiswa">
               <Properties>
                 <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
                   <Table columnCount="8" rowCount="4">
@@ -178,7 +175,7 @@
                 </Property>
               </Properties>
               <Events>
-                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="tableSiswaMouseClicked"/>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="tblSiswaMouseClicked"/>
               </Events>
             </Component>
           </SubComponents>
@@ -187,6 +184,9 @@
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="66" green="cc" red="0" type="rgb"/>
+            </Property>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/alumni202457201065/gambar/icons8-plus-20.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Tambah"/>
           </Properties>
@@ -199,6 +199,9 @@
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="33" green="cc" red="ff" type="rgb"/>
             </Property>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/alumni202457201065/gambar/icons8-modify-20.png"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Ubah"/>
           </Properties>
           <Events>
@@ -210,6 +213,9 @@
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="33" green="33" red="ff" type="rgb"/>
             </Property>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/alumni202457201065/gambar/icons8-delete-20.png"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Hapus"/>
           </Properties>
           <Events>
@@ -220,6 +226,9 @@
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="eb" green="99" red="33" type="rgb"/>
+            </Property>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/alumni202457201065/gambar/icons8-change-20.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Reset"/>
           </Properties>
@@ -283,24 +292,22 @@
             </Component>
           </SubComponents>
         </Container>
-        <Component class="javax.swing.JTextField" name="tNis1">
+        <Component class="javax.swing.JTextField" name="tNis">
         </Component>
-        <Component class="javax.swing.JTextField" name="tNama1">
+        <Component class="javax.swing.JTextField" name="tNamaSiswa">
         </Component>
-        <Component class="javax.swing.JTextField" name="tTglLhr1">
+        <Component class="javax.swing.JTextField" name="tTempatLahir">
         </Component>
-        <Component class="javax.swing.JTextField" name="tTl1">
-        </Component>
-        <Component class="javax.swing.JTextField" name="tAlamat1">
+        <Component class="javax.swing.JTextField" name="tAlamat">
           <Properties>
             <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
               <Color id="Text Cursor"/>
             </Property>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="tHp1">
+        <Component class="javax.swing.JTextField" name="tHp">
         </Component>
-        <Component class="javax.swing.JComboBox" name="CbJk1">
+        <Component class="javax.swing.JComboBox" name="cJenisKelamin">
           <Properties>
             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
               <StringArray count="2">
@@ -313,7 +320,7 @@
             <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
           </AuxValues>
         </Component>
-        <Component class="javax.swing.JComboBox" name="CbKls1">
+        <Component class="javax.swing.JComboBox" name="cKelas">
           <Properties>
             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
               <StringArray count="3">
@@ -367,7 +374,7 @@
             <Property name="text" type="java.lang.String" value="Alamat"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jFoto1">
+        <Component class="javax.swing.JLabel" name="tFoto">
           <Properties>
             <Property name="horizontalAlignment" type="int" value="0"/>
             <Property name="text" type="java.lang.String" value="Foto"/>
@@ -377,17 +384,22 @@
               </Border>
             </Property>
           </Properties>
-        </Component>
-        <Component class="javax.swing.JButton" name="jPilihFoto1">
-          <Properties>
-            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="ff" green="99" red="66" type="rgb"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="Pilih Foto"/>
-          </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jPilihFoto1ActionPerformed"/>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="tFotoMouseClicked"/>
           </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="tFotoPath">
+          <Properties>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="f2" green="f2" red="f2" type="rgb"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="jLabel1"/>
+          </Properties>
+        </Component>
+        <Component class="com.toedter.calendar.JDateChooser" name="tTanggal">
+          <Properties>
+            <Property name="dateFormatString" type="java.lang.String" value="yyyy-MM-dd"/>
+          </Properties>
         </Component>
       </SubComponents>
     </Container>

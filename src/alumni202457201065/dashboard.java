@@ -4,6 +4,7 @@
  */
 package alumni202457201065;
 import com.formdev.flatlaf.FlatLightLaf;
+import java.awt.Color;
 import javax.swing.JOptionPane;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
@@ -19,6 +20,12 @@ public class dashboard extends javax.swing.JFrame {
      */
     public dashboard() {
         initComponents();
+        Dasbord.setBackground(new Color(0, 134, 179));
+        pConten.removeAll();
+        pConten.add(new panelDasbor());
+        pConten.repaint();
+        pConten.revalidate();
+        
     }
 
     /**
@@ -30,7 +37,7 @@ public class dashboard extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        PanelUtama = new javax.swing.JPanel();
+        Dasbord = new javax.swing.JPanel();
         pConten = new javax.swing.JPanel();
         jPanel1 = new javax.swing.JPanel();
         jJurusan = new javax.swing.JButton();
@@ -46,21 +53,21 @@ public class dashboard extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
 
-        PanelUtama.setMaximumSize(new java.awt.Dimension(1023, 700));
+        Dasbord.setMaximumSize(new java.awt.Dimension(1023, 700));
 
         pConten.setPreferredSize(new java.awt.Dimension(780, 1555));
         pConten.setLayout(new java.awt.CardLayout());
 
-        javax.swing.GroupLayout PanelUtamaLayout = new javax.swing.GroupLayout(PanelUtama);
-        PanelUtama.setLayout(PanelUtamaLayout);
-        PanelUtamaLayout.setHorizontalGroup(
-            PanelUtamaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(PanelUtamaLayout.createSequentialGroup()
+        javax.swing.GroupLayout DasbordLayout = new javax.swing.GroupLayout(Dasbord);
+        Dasbord.setLayout(DasbordLayout);
+        DasbordLayout.setHorizontalGroup(
+            DasbordLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(DasbordLayout.createSequentialGroup()
                 .addComponent(pConten, javax.swing.GroupLayout.PREFERRED_SIZE, 976, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
-        PanelUtamaLayout.setVerticalGroup(
-            PanelUtamaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        DasbordLayout.setVerticalGroup(
+            DasbordLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(pConten, javax.swing.GroupLayout.DEFAULT_SIZE, 1017, Short.MAX_VALUE)
         );
 
@@ -213,13 +220,13 @@ public class dashboard extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(PanelUtama, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(Dasbord, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jExit, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(PanelUtama, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(Dasbord, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
             .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
             .addComponent(jExit, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
@@ -321,7 +328,7 @@ public class dashboard extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JPanel PanelUtama;
+    private javax.swing.JPanel Dasbord;
     private javax.swing.JButton jAbout;
     private javax.swing.JButton jDasbor;
     private javax.swing.JButton jExit;
